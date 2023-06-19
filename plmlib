@@ -1,0 +1,12 @@
+  /home/andrei/gproj/plmlib:
+  total used in directory 40 available 695.6 GiB
+  drwxrwxr-x 3 andrei andrei 4096 Jun 19 19:10 .
+  drwxrwxr-x 4 andrei andrei 4096 Jun 19 19:09 ..
+* -rw-r--r-- 1 andrei andrei 1536 Jun 19 16:40 sys.plm
+* -rw-r--r-- 1 andrei andrei 2688 Jun 19 17:03 string.plm
+* -rw-r--r-- 1 andrei andrei 1024 Jun 19 13:18 procdcl.inc
+* -rw-r--r-- 1 andrei andrei  256 Jun 19 18:59 plmlib.plm
+* -rw-r--r-- 1 andrei andrei  256 Jun 19 19:01 plmlib.inc
+* -rw-r--r-- 1 andrei andrei  384 Jun 19 13:11 const.inc
+* -rw-r--r-- 1 andrei andrei 4096 Jun 19 16:41 cons.plm
+* drwxrwxr-x 7 andrei andrei 4096 Jun 19 19:10 .git

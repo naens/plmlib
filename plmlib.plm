@@ -1,0 +1,18 @@
+plmlib:
+do;
+
+/* dos library */
+$nolist
+$include (c:\intel\lib\doslibs.inc)
+$list
+
+/* constants*/
+$include (const.inc)
+
+/* source code */
+$include (cons.plm)
+$include (string.plm)
+$include (sys.plm)
+
+end plmlib;
+
