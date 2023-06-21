@@ -1,3 +1,13 @@
 #+TITLE: plmlib
 
-This is a library for PL/M programs. It's for PL/M-86.
+This is the library I will use to write PL/M programs under DOS.  It
+is written using the usual Intel PL/M-86 library.  The purpose is to
+be a translation layer between my library and the Intel library.
+Because I would like to be able to use not only DOS, but also CP/M-86
+and CP/M-80.  This way the PL/M code will not have to change, only the
+library.
+
+For now it will only be the DOS library because it's the OS I use at
+the moment to write PL/M programs.  It has some advantages compared to
+PL/M-80 such as longer identifier names, so PL/M-86 code is more
+readable.
