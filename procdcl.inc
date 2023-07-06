@@ -32,6 +32,11 @@ print_uint: procedure (n) external;
     declare n uint;
 end print_uint;
 
+debug: procedure (p$str) external;
+    declare p$str pointer;
+end debug;
+
+
 
 /* system functions */
 get_command_tail: procedure (p$str, len) external;
@@ -43,4 +48,4 @@ terminate: procedure (code) external;
     declare code byte;
 end terminate;
 
-
+

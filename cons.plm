@@ -188,4 +188,31 @@ read_line: procedure (len, p$buf) uint public;
     return l;
 end read_line;
 
-
+
+/****f* cons/debug
+ *
+ * NAME
+ *   debug -- print a debug string to the printer
+ *
+ * SYNOPSIS
+ *   call debug(p$str);
+ *
+ * DESCRIPTION
+ *   Print the null-terminated string to STDPRN, where p$str is intended
+ *   to be a debug string.
+ *
+ ******
+ */
+debug: procedure (p$str) public;
+    declare p$str pointer;
+    declare str based p$str (*) byte;
+    declare i byte;
+    i = 0;
+    do while str(i) <> 0;
+        call dos_prn_out(str(i));
+        i = i + 1;
+    end;
+    call dos_prn_out(cr);
+    call dos_prn_out(lf);
+end debug;
+
