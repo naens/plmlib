@@ -3,9 +3,10 @@
 all: plmlib.obj .symbolic
    
 .plm.obj
-   plm86 $*.plm
+   plm86 plmlib.plm
 
 clean: .symbolic
    rm *.obj
    rm *.lst
    rm *.bak
+
