@@ -38,7 +38,7 @@ get_command_tail: procedure (p$str, len) public;
 
     psp$sel = dos_get_psp;
     i = 1;    /* the first char is a space */
-    do while i < psp.length and psp.buf(i) <> cr and i < len - 1;
+    do while i < psp.length and psp.buf(i) <> cr;
         str(i - 1) = psp.buf(i);
         i = i + 1;
     end;
@@ -63,4 +63,4 @@ terminate: procedure (code) public;
     call dos_exit(code);
 end terminate;
 
-
+

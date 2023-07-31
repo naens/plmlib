@@ -3,7 +3,7 @@ do;
 
 /* dos library */
 $nolist
-$include (c:\intel\lib\doslibs.inc)
+$include (c:\devel\intel\lib\doslibs.inc)
 $list
 
 /* constants*/
@@ -15,4 +15,4 @@ $include (string.plm)
 $include (sys.plm)
 
 end plmlib;
-
+

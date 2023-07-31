@@ -144,7 +144,7 @@ print_uint: procedure (num) public;
         call print_char('0');
     else do;
         do while num > 0;
-            buf(i) = (num mod 10) + '0';
+            buf(i) = low(num mod 10) + '0';
             num = num / 10;
             i = i - 1;
         end;
@@ -215,4 +215,4 @@ debug: procedure (p$str) public;
     call dos_prn_out(cr);
     call dos_prn_out(lf);
 end debug;
-
+
