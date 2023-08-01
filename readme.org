@@ -1,0 +1,16 @@
+* About the project
+  This is the library I use to call system functions.  For the moment
+  I use the Intel iAPX DOSLIBS library, but later I will replace it
+  with an assembly library and support different Operating Systems.
+
+* Additional info
+  I needed to modify and recompile the ~DOSLIBS.ASM~ file in order to
+  get the command tail correctly.  I needed to uncomment the two
+  commented lines in the ~dos_get_psp~ subroutine:
+
+#+BEGIN_SRC asm
+    mov ax, cs
+    sub ax, 10h
+#+END_SRC
+
+  Then I recompiled the library using the Intel ASM86 assembler.
