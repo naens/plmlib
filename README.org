@@ -1,13 +1,16 @@
-#+TITLE: plmlib
+* About the project
+  This is the library I use to call system functions.  For the moment
+  I use the Intel iAPX DOSLIBS library, but later I will replace it
+  with an assembly library and support different Operating Systems.
 
-This is the library I will use to write PL/M programs under DOS.  It
-is written using the usual Intel PL/M-86 library.  The purpose is to
-be a translation layer between my library and the Intel library.
-Because I would like to be able to use not only DOS, but also CP/M-86
-and CP/M-80.  This way the PL/M code will not have to change, only the
-library.
+* Additional info
+  I needed to modify and recompile the ~DOSLIBS.ASM~ file in order to
+  get the command tail correctly.  I needed to uncomment the two
+  commented lines in the ~dos_get_psp~ subroutine:
 
-For now it will only be the DOS library because it's the OS I use at
-the moment to write PL/M programs.  It has some advantages compared to
-PL/M-80 such as longer identifier names, so PL/M-86 code is more
-readable.
+#+BEGIN_SRC asm
+    mov ax, cs
+    sub ax, 10h
+#+END_SRC
+
+  Then I recompiled the library using the Intel ASM86 assembler.
